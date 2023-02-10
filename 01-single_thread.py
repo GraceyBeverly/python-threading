@@ -2,8 +2,8 @@
 from training import WEBSITES, visit_website
 
 
-if __name__ == '__main__':
-    print('Main thread starting')
+if __name__ == "__main__":
+    print("Main thread starting")
     for website in WEBSITES:
         visit_website(website)
-    print('Main thread ending')
+    print("Main thread ending")

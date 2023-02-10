@@ -5,13 +5,13 @@ import sys
 import time
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Create a forced timeout option
     if len(sys.argv) != 2:
-        print(f'Usage: {sys.argv[0]} TIMEOUT')
+        print(f"Usage: {sys.argv[0]} TIMEOUT")
         sys.exit()
 
-    print('Main thread starting')
+    print("Main thread starting")
 
     # The program will end after `timeout` seconds
     timeout = int(sys.argv[1])
@@ -20,8 +20,8 @@ if __name__ == '__main__':
         # Create and start some daemon threads
         t = threading.Thread(target=visit_website, args=[website], daemon=True)
         t.start()
-    
+
     # Force the program to end after timeout
     time.sleep(timeout)
 
-    print('Main thread ending')
+    print("Main thread ending")

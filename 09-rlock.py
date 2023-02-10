@@ -20,7 +20,7 @@ class Counter:
 
     def changeAandB(self):
         with self.lock:
-            self.changeA() # a usual lock would block at here
+            self.changeA()  # a usual lock would block at here
             self.changeB()
 
 

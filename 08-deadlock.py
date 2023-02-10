@@ -2,13 +2,12 @@
 import threading
 
 
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     # Create a lock
     lock = threading.Lock()
     print(lock)
 
-    # Acquire a lock 
+    # Acquire a lock
     lock.acquire()
     print(lock)
 
